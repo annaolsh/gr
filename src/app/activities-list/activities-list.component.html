@@ -1,0 +1,43 @@
+<section class="activities-list-container">
+  <section>
+    <header>
+      <h2>Appreciation at Work</h2>
+      <span class="buttons">
+        <mat-icon class="add-icon" (click)="createNew()">add</mat-icon>
+      </span>
+    </header>
+    <section *ngFor="let activity of activities; index as i" class="single-activity-wrapper">
+      <div class="svg-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" height="24" width="24"><circle cx="12" cy="12" r="10" fill="#7D2800"/><rect width="6.667" height="6.667" x="12" y="7.556" fill="#F8E5CD" rx="1" transform="rotate(45 12 7.556)"/></svg>
+      </div>
+      <app-single-activity class="single-activity-wrapper--data" [singleActivity]="activity"></app-single-activity>
+      <div class="single-activity-wrapper--buttons">
+        <mat-icon (click)="editActivity(i)">edit</mat-icon>
+        <mat-icon (click)="deleteActivity(i)">delete</mat-icon>
+      </div>
+    </section>
+  </section>
+
+   <form *ngIf="isFormOn" [formGroup]="activityInfo">
+    <div class="input-element">
+      <label for="title">Title:</label>
+      <input id="title" type="text" formControlName="title">
+    </div>
+
+    <div class="input-element">
+      <label for="time">Time:</label>
+      <input id="time" type="text" formControlName="time">
+    </div>
+
+    <div class="input-element">
+      <label for="type">Type:</label>
+      <input id="type" type="text" formControlName="type">
+    </div>
+
+    <div class="form-buttons">
+      <button mat-button (click)="closeForm()">Cancel</button>
+      <button mat-button (click)="formSubmitted()">Save</button>
+    </div>
+  </form>
+
+</section>
