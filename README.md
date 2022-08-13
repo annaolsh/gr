@@ -1,4 +1,7 @@
-# Gatheround
+![Section page screenshot](https://i.imgur.com/cuSP19y.png)
+![Section page screenshot with the form](https://i.imgur.com/8xinokE.png)
+
+# GR
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
 
