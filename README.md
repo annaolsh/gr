@@ -1,5 +1,5 @@
-![Section page screenshot](https://i.imgur.com/cuSP19y.png)
-![Section page screenshot with the form](https://i.imgur.com/8xinokE.png)
+![Section page screenshot](https://i.imgur.com/Z9d1WhT.png)
+![Section page screenshot with the form](https://i.imgur.com/gnK0sWU.png)
 
 # GR
 
