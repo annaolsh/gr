@@ -38,6 +38,8 @@ export class ActivitiesListComponent implements OnInit {
         this.activityInfo.value.title;
       this.activities[this.editedActivityIdx].time =
         this.activityInfo.value.time;
+      this.activities[this.editedActivityIdx].type =
+        this.activityInfo.value.type;
     }
     this.closeForm();
   }
